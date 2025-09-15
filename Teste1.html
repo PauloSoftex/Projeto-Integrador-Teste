@@ -16,14 +16,76 @@ função do calculo final Paulo.
 -->
 <body>
     <h1>Mini Loja</h1>
+    
     <main>
     <div>
         <h1>Produtos</h1>
         <div>
-            <p>camisa</p>
+            <p id="camisa">Camisa masculina</p>
+            <button onclick="adicionarCamisa()">Adicionar</button>
+
+             <p id="tenis">Tênis feminino</p>
+            <button onclick="adicionarTenis()">Adicionar</button>          
+           
+                     
+            
             <p>preco</p>
-            <button>adicionar</button>
+
+           
+            <p id="saida"></p>
+
+
+            <script>
+
+            var produtos = [];  
+            
+            function adicionarCamisa() {
+            var camisa = document.getElementById("camisa").textContent; 
+                
+             
+            var produto = { camisa, tenis };
+            produtos.push(produto);
+            document.getElementById("camisa").textContent;            
+            
+            document.getElementById("saida").innerHTML = "O produto " + produto.camisa + " foi adicionado";
+
+            }
+
+            
+            function adicionarTenis() {
+            var tenis = document.getElementById("tenis").textContent;        
+
+              
+            var produto = { camisa, tenis };
+            produtos.push(produto);
+            document.getElementById("camisa").textContent;
+            
+            
+            document.getElementById("saida").innerHTML = "O produto " + produto.tenis + " foi adicionado";
+
+
+
+           }
+            
+        
+        
+        
+
+
+
+
+
+
+
+
+            </script>
+
+
+
+
+
         </div>
+        
     </div>
     <div>
         <h1>carrinho</h1>
