@@ -14,11 +14,11 @@ h1, h2 {
   font-weight: 600;
 }
 
-/* Layout principal */
+/* Deixa produtos e carrinho lado a lado */
 .container {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 20px;        /* Espaço entre os blocos */
+  flex-wrap: wrap;   /* Para ficar responsivo em telas pequenas */
 }
 
 /* Blocos de produtos e carrinho */
